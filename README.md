@@ -15,16 +15,16 @@ Dimension tables provide the descriptive context that makes fact table measureme
 
 Characteristics:
 
-•	Store descriptive attributes used for filtering, grouping, and labeling
-•	Relatively smaller in terms of row count compared to fact tables
-•	Include natural and surrogate keys for relationship management
-•	Support hierarchical relationships within dimensions
+-	Store descriptive attributes used for filtering, grouping, and labeling
+-Relatively smaller in terms of row count compared to fact tables
+-	Include natural and surrogate keys for relationship management
+-	Support hierarchical relationships within dimensions
 
 Common Examples:
 
-•	Product dimension with names, categories, brands, descriptions
-•	Customer dimension with demographics, geographic information, segments
-•	Time dimension with dates, months, quarters, fiscal periods
+-	Product dimension with names, categories, brands, descriptions
+-	Customer dimension with demographics, geographic information, segments
+-	Time dimension with dates, months, quarters, fiscal periods
 
 Design Features:
 
@@ -38,17 +38,17 @@ Fact tables serve as the central repositories for measurable business metrics an
 
 Characteristics:
 
-•	Store quantitative measurements (facts) such as sales amounts, quantities, or durations
-•	Typically contain the majority of rows in the data warehouse
-•	Include foreign keys linking to related dimension tables
-•	Often include date/time stamps for temporal analysis
+-	Store quantitative measurements (facts) such as sales amounts, quantities, or durations
+-	Typically contain the majority of rows in the data warehouse
+-	Include foreign keys linking to related dimension tables
+-	Often include date/time stamps for temporal analysis
 
 Common Examples:
 
-•	Sales fact table with revenue, quantity, discount amounts
-•	Web analytics fact table with page views, session duration, bounce rates
-•	Manufacturing fact table with production volumes, defect rates, cycle times
-•	Design Considerations:
+-	Sales fact table with revenue, quantity, discount amounts
+-	Web analytics fact table with page views, session duration, bounce rates
+-	Manufacturing fact table with production volumes, defect rates, cycle times
+	Design Considerations:
 
 Grain definition: the level of detail captured in each fact record
 Additive vs. non-additive measures
@@ -59,11 +59,11 @@ Slowly changing dimension handling
 
       Importance of ETL
 
-•	Data Integration: ETL combines data from various sources, including structured and unstructured formats, ensuring seamless integration for a unified view.
-•	Data Quality: By transforming raw data, ETL cleanses and standardizes it, improving data accuracy and consistency for more reliable insights.
-•	Essential for Data Warehousing: ETL prepares data for storage in data warehouses, making it accessible for analysis and reporting by aligning it with the target system's requirements.
-•	Enhanced Decision-Making: ETL helps businesses derive actionable insights, enabling better forecasting, resource allocation, and strategic planning.
-•	Operational Efficiency: Automating the data pipeline through ETL speeds up data processing, allowing organizations to make real-time decisions based on the most current date
+-Data Integration: ETL combines data from various sources, including structured and unstructured formats, ensuring seamless integration for a unified view.
+-	Data Quality: By transforming raw data, ETL cleanses and standardizes it, improving data accuracy and consistency for more reliable insights.
+-	Essential for Data Warehousing: ETL prepares data for storage in data warehouses, making it accessible for analysis and reporting by aligning it with the target system's requirements.
+-	Enhanced Decision-Making: ETL helps businesses derive actionable insights, enabling better forecasting, resource allocation, and strategic planning.
+-	Operational Efficiency: Automating the data pipeline through ETL speeds up data processing, allowing organizations to make real-time decisions based on the most current date
 ## Difference Between Star and Snowflake Schema
 
 | Feature                 | Star Schema                                           | Snowflake Schema                                           |
@@ -83,34 +83,34 @@ Slowly changing dimension handling
 
 4. Real-world applications where data warehouses have significantly improved business decision-making.
 1. Retail:
-•	Inventory Management:
+-	Inventory Management:
 Data warehouses consolidate sales data from multiple stores and channels, allowing retailers to understand product demand, optimize inventory levels, and minimize waste. 
-•	Personalized Marketing:
+-	Personalized Marketing:
 By analyzing customer purchase history and preferences, retailers can tailor marketing campaigns and offers, increasing sales and customer loyalty. 
-•	Supply Chain Optimization:
+-	Supply Chain Optimization:
 Data warehouses help track inventory movement, predict potential disruptions, and optimize logistics, leading to faster delivery times and reduced costs. 
 2. Finance:
-•	Fraud Detection:
+-	Fraud Detection:
 Financial institutions use data warehouses to analyze transaction patterns, identify suspicious activities, and prevent fraudulent transactions. 
-•	Risk Management:
+-	Risk Management:
 Data warehouses enable financial institutions to assess credit risk, manage loan portfolios, and make informed investment decisions. 
-•	Customer Relationship Management (CRM):
+-	Customer Relationship Management (CRM):
 By consolidating customer data, banks can understand customer behavior, personalize services, and improve customer satisfaction. 
 3. Manufacturing:
-•	Production Optimization:
+-	Production Optimization:
 Data warehouses track machine performance, identify bottlenecks, and optimize production schedules, leading to increased efficiency and reduced downtime.
-•	Quality Control:
+-	Quality Control:
 By analyzing data on product defects, manufacturers can identify root causes and implement corrective actions to improve product quality.
-•	Supply Chain Management:
+-	Supply Chain Management:
 Data warehouses help monitor supplier performance, track material flow, and optimize supply chain processes, ensuring timely delivery of materials and components. 
 4. Healthcare:
-•	Patient Care:
+-	Patient Care:
 Data warehouses enable healthcare providers to analyze patient data, identify trends in disease outbreaks, and improve patient outcomes.
-•	Resource Allocation:
+-	Resource Allocation:
 By analyzing patient data and hospital operations, healthcare organizations can optimize resource allocation, reduce wait times, and improve efficiency.
-•	Cost Management:
+-	Cost Management:
 Data warehouses help track healthcare costs, identify areas of inefficiency, and implement cost-saving measures. 
 5. Telecommunications:
-•	Customer Behavior Analysis:
+-	Customer Behavior Analysis:
 Telecom companies use data warehouses to analyze customer usage patterns, identify popular services, and tailor offers to individual customers.
 
